@@ -3,58 +3,111 @@
   <head>
     <title>{{ page.title }}</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/main.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
   </head>
 
   <body>
   <!--Navbar-->
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" >
       <div class="container-fluid">
           <div class="navbar-header">
               <a class="navbar-brand" href="https://aholdeman.github.io/test-site/"><strong>Research Computing</strong></a>
           </div>
-          <ul class="nav navbar-nav">
-              <li class="active"><a href="https://aholdeman.github.io/test-site/">Home</a></li>
-              <li><a class="nav-item" href="https://aholdeman.github.io/test-site/about/">About</a></li>
-              <li><a class="nav-item" href="https://aholdeman.github.io/test-site/applications">Applications</a></li>
-              <li class="nav-item dropdown dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="https://aholdeman.github.io/test-site/tutorials">Software Tutorials
-                      <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="https://aholdeman.github.io/test-site/tutorials/abaqus">Abaqus</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/tutorials/amber">Amber</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/tutorials/cuda">CUDA</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/tutorials/matlab">MATLAB</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/tutorials/open-mpi">Open MPI</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/tutorials/python">Python</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/tutorials/qe">Quantum Espresso</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/tutorials/R">R</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown"
-                     href="https://aholdeman.github.io/test-site/sys-tutorial">System Tutorials
-                      <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="https://aholdeman.github.io/test-site/sys-tutorial/getting-started">Connecting to RC Systems</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/sys-tutorial/module">Modules</a></li>
-                      <li><a href="https://aholdeman.github.io/test-site/sys-tutorial/slurm-scheduler">Slurm Scheduler</a></li>
-                  </ul>
-              </li>
-          </ul>
       </div>
   </nav>
   <div class="container">
       <div class="row">
-              {{ content }}
-      </div>
-    </div>
+          <div class="col col-md-3">
+              <nav id="sidebar">
+                  <div class="sidebar-header">
+                      <h3>Research Computing</h3>
+                  </div>
+                  <ul class="list-unstyled components">
+                      <li class="active">
+                          <a href="#homeSubmenu">
+                              <i></i>
+                              Home
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" style="color:white;">
+                              <i></i>
+                              About
+                          </a>
+                          <a href="#" style="color:white;">
+                              <i></i>
+                              Applications
+                          </a>
+                          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:white;">
+                              <i></i>
+                              User Tutorials
 
-  </body>
-  <hr>
-  <div class="container-fluid footer">
-      <p class="text-muted" style="text-align:center; padding-top:20px;"><a href="https://sc.edu/rci">
-          University of South Carolina Research Computing</a></p>
+                          </a>
+
+                          <ul class="collapse list-unstyled" id="pageSubmenu">
+
+                              <li>
+                                  <a href="#" style="color:white;">Connecting to RC Systems</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">Modules</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">Slurm Scheduler</a>
+                              </li>
+                          </ul>
+                          <a href="#3pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:white;">
+                              <i></i>
+                              Software Tutorials
+                          </a>
+                          <ul class="collapse list-unstyled" id="3pageSubmenu">
+                              <li>
+                                  <a href="#" style="color:white;">Abaqus</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">Amber</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">CUDA</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">MATLAB</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">Open MPI</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">Python</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">Quantum Espresso</a>
+                              </li>
+                              <li>
+                                  <a href="#" style="color:white;">R</a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                  <ul class="list-unstyled CTAs">
+                      <li>
+                          <a href="https://sc.edu/about/offices_and_divisions/division_of_information_technology/rci/" class="download">
+                              <div class="yes">More About RC</div></a>
+                      </li>
+
+                  </ul>
+              </nav>
+
+          </div>
+          <div class="col col-md-9">
+            {{ content }}
+          </div>
+    </div>
   </div>
+  </body>
+
 </html>
