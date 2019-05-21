@@ -12,10 +12,10 @@
 
   <body>
   <!--Navbar-->
-  <nav class="navbar navbar-default" >
+  <nav class="navbar navbar-default" style="background-color: #9D2F35">
       <div class="container-fluid">
           <div class="navbar-header">
-              <a class="navbar-brand" href="https://aholdeman.github.io/test-site/"><strong>Research Computing</strong></a>
+              <a class="navbar-brand" href="https://aholdeman.github.io/test-site/" style="color:white;"><strong>Research Computing</strong></a>
           </div>
       </div>
   </nav>
@@ -45,7 +45,7 @@
                           <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:white;">
                               <i></i>
                               User Tutorials
-
+                              <span class="caret"></span>
                           </a>
 
                           <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -63,6 +63,7 @@
                           <a href="#3pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:white;">
                               <i></i>
                               Software Tutorials
+                              <span class="caret"></span>
                           </a>
                           <ul class="collapse list-unstyled" id="3pageSubmenu">
                               <li>
@@ -104,8 +105,10 @@
 
           </div>
           <div class="col col-md-9">
-            {{ content }}
+
+              {{ content }}
           </div>
+
     </div>
   </div>
   </body>

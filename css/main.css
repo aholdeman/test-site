@@ -1,7 +1,9 @@
-
+h1 h3 h4 {
+    color: #9D2F35;
+}
 .header-button {
-    background-color: #537391;
-    border-color: #537391;
+    background-color: #565656;
+    border-color: #565656;
     color: white;
 }
 
@@ -41,7 +43,7 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #9D2F35;
+    background: #878787;
     color: #fff;
     transition: all 0.3s;
     position: fixed;
@@ -82,9 +84,7 @@
 #sidebar.active ul ul a {
     padding: 10px !important;
 }
-li {
-    color:white !important;
-}
+
 #sidebar.active .dropdown-toggle::after {
     top: auto;
     bottom: 10px;
@@ -96,7 +96,7 @@ li {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #73000a;
+    background: #565656;
 }
 
 #sidebar .sidebar-header strong {
@@ -116,7 +116,7 @@ li {
 }
 
 #sidebar ul li a:hover {
-    color: #73000a !important;
+    color: #9D2F35 !important;
     background: #fff;
 }
 
@@ -126,7 +126,7 @@ li {
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #73000a !important;
+    color: #9D2F35 !important;
     background: #fff;
 }
 
@@ -145,7 +145,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #73000a;
+    background: #565656;
 }
 
 ul.CTAs {
@@ -162,7 +162,7 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #565656;
 }
 
 .yes {
