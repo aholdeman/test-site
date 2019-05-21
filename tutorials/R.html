@@ -4,12 +4,9 @@ title: R Tutorial
 ---
 <link rel="stylesheet" href="../css/main.css">
 
-    <div class="jumbotron header-img">
-        <h1>R Tutorial</h1>
-        <p><a class="btn btn-primary btn-lg header-button" href="https://github.com/torkian/slurm-R/tree/r_tutorial">
-            Find the files in this tutorial on our
-            GitHub!</a></p>
-    </div>
+
+<h1><strong>R Tutorial</strong></h1>
+
     <p>
         R is a system for statistical computation and graphics. It consists of a language plus a run-time environment
         with graphics, a debugger,
@@ -28,11 +25,11 @@ title: R Tutorial
     Currently, versions 3.4.1 and 3.5.0 of R are available on the cluster.
     </p>
     <div>
-        <h3 style="color:#537391;"><strong>Basics</strong></h3>
+        <h3><strong>Basics</strong></h3>
         After loading the R module, R can be launched through the command line by simply typing
         <code>R</code>.
 
-        <h3 style="color:#537391;"><strong>R Virtual Environment</strong></h3>
+        <h3><strong>R Virtual Environment</strong></h3>
         To use R through the command line, you must first initialize a R virtual environment. Virtual
         environments are isolated environments for projects, so that each project can have its own dependencies and
         packages installed, regardless of what dependencies every other project has. To create the virtual environment,
@@ -66,7 +63,9 @@ export R_LIBS_USER=/home/$USER/.conda/envs/r-environment/lib/R/library/
     </div>
 
     <div>
-        <h3 style="color:#537391;"><strong>Running R through a job script</strong></h3>
+        <h3><strong>Running R through a job script</strong></h3>
+        <p><a class="btn header-button" href="https://github.com/torkian/slurm-R/tree/r_tutorial">
+            Files from this tutorial are available on GitHub</a></p>
         1. Ensure that you have a virtual environment created, following the steps described above.
         <p>2. Create a R script. This repository provides a simple script, test.r, which demonstrates some of R's basic
             features.</p>

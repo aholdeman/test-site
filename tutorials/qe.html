@@ -4,11 +4,8 @@ title: Quantum Espresso Tutorial
 ---
 <link rel="stylesheet" href="../css/main.css">
 
-    <div class="jumbotron header-img">
-        <h1>Quantum Espresso Tutorial</h1>
-        <p><a class="btn btn-primary btn-lg header-button" href="https://github.com/torkian/slurm-qe/tree/qe_tutorial">
-            Find the files in this tutorial on our GitHub!</a></p>
-    </div>
+<h1><strong>Quantum Espresso Tutorial</strong></h1>
+
     <p>
         Quantum Espresso is a software suite for ab initio quantum chemistry methods of electronic-structure calculation
         and materials modeling.
@@ -17,7 +14,7 @@ title: Quantum Espresso Tutorial
             Documentation for Quantum Espresso can be found on its official website.</a></p>
     <p>Currently, Quantum Espresso version 6.2.0 is available on the cluster. </p>
     <div>
-        <h3 style="color:#537391;"><strong>Basics</strong></h3>
+        <h3><strong>Basics</strong></h3>
         <p>To run Quantum Espresso on the cluster, you must first
             load the Open MPI module and the Quantum Espresso module using the commands:
         <p style="text-align: center;"><code>module load openmpi
@@ -48,8 +45,9 @@ title: Quantum Espresso Tutorial
     </div>
 
     <div>
-        <h3 style="color:#537391;"><strong>Running Quantum Espresso through a job script</strong></h3>
-
+        <h3><strong>Running Quantum Espresso through a job script</strong></h3>
+        <p><a class="btn header-button" href="https://github.com/torkian/slurm-qe/tree/qe_tutorial">
+            Files from this tutorial are available on GitHub</a></p>
         1. Create a QE input file, with the extension <i>*.in</i>. This repository provides a simple script, <i>si.scf.in</i>,
         and it’s helper script Si.pz-vbc.UPF, which performs self-consistent calculations for Silicon in the diamond
         structure.

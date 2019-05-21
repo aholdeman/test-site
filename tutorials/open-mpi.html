@@ -4,12 +4,10 @@ title: Open MPI Tutorial
 ---
 <link rel="stylesheet" href="../css/main.css">
 
-    <div class="jumbotron header-img">
-        <h1>Open MPI Tutorial</h1>
-        <p><a class="btn btn-primary btn-lg header-button"
-              href="https://github.com/torkian/slurm-openMPI/tree/openMPI_tutorial">
-            Find the files in this tutorial on our GitHub!</a></p>
-    </div>
+
+<h1><strong>Open MPI Tutorial</strong></h1>
+
+
     <p>
         The Open MPI Project is an open source MPI-2 implementation that is developed and maintained by a consortium of
         academic, research, and industry partners.
@@ -21,7 +19,7 @@ title: Open MPI Tutorial
     <p>Currently, version 1.10.1 is available on the cluster, and Open MPI can be compiled through GCC, Intel, Open64,
         and PGI. </p>
     <div>
-        <h3 style="color:#537391;"><strong>Basics</strong></h3>
+        <h3><strong>Basics</strong></h3>
         <p>To use Open MPI, you must first load the Open MPI module with the compiler of your choice.
             For example, if you want to use the GCC compiler, use the command
         <p style="text-align: center;"><code>module load openmpi/gcc</code></p></p>
@@ -42,8 +40,10 @@ title: Open MPI Tutorial
     </div>
 
     <div>
-        <h3 style="color:#537391;"><strong>Running Open MPI through a job script</strong></h3>
-
+        <h3><strong>Running Open MPI through a job script</strong></h3>
+        <p><a class="btn header-button"
+              href="https://github.com/torkian/slurm-openMPI/tree/openMPI_tutorial">
+            Files from this tutorial are available on GitHub</a></p>
         1. Create a script. This repository provides a simple script, <i>test_mpi.c</i>,
         which runs on several CPU cores spanning several compute nodes.
 
